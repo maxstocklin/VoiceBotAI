@@ -37,7 +37,7 @@ Ensure you have the API keys for IBM Watson and OpenAI, and install the required
     export TTS_API_KEY='your-ibm-text-to-speech-key'
     export OPENAI_API_KEY='your-openai-key'
    ```
-##Usage
+## Usage
 
 Run the script with the path to your audio file:
 
@@ -46,14 +46,14 @@ Run the script with the path to your audio file:
    ```
 Replace <soundfile_path> with your audio file's path.
 
-##How It Works
+## How It Works
 
-###Step 1: Speech to Text
+### Step 1: Speech to Text
 Transcribes audio to text using IBM's API.
 
-###Step 2: ChatGPT Interaction
+### Step 2: ChatGPT Interaction
 Sends text to ChatGPT for response.
 
-###Step 3: Text to Speech
+### Step 3: Text to Speech
 Converts response to speech using IBM's API.
 
