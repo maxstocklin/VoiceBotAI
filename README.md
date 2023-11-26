@@ -37,6 +37,14 @@ Ensure you have the API keys for IBM Watson and OpenAI, and install the required
     export TTS_API_KEY='your-ibm-text-to-speech-key'
     export OPENAI_API_KEY='your-openai-key'
    ```
+4. Install Python packages
+
+   ```bash
+   pip install --upgrade openai
+   pip install --upgrade ibm-watson
+   pip install --upgrade ibmcloud
+   ```
+
 ## Usage
 
 Run the script with the path to your audio file:
