@@ -11,7 +11,6 @@ load_dotenv('.env')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 def main():
-	print(OPENAI_API_KEY)
 	if len(sys.argv) != 2:
 		print("Usage: python test.py <filename>")
 		sys.exit(1)
