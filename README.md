@@ -50,9 +50,9 @@ Ensure you have the API keys for IBM Watson and OpenAI, and install the required
 Run the script with the path to your audio file:
 
    ```bash
-    python chatbot.py <soundfile_path>
+    python chatbot.py <audiofile_path>
    ```
-Replace <soundfile_path> with your audio file's path.
+Replace <audiofile_path> with your audio file's path.
 
 ## How It Works
 
