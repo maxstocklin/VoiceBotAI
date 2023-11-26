@@ -21,9 +21,13 @@ Ensure you have the API keys for IBM Watson and OpenAI, and install the required
 ## Installation
 
 1. Clone or download this repository.
-2. Install dependencies:
+2. Edit Bash Profile:
    ```bash
-   pip install -r requirements.txt
+   vim ~/.bash_profile
+   ```
+    or
+   ```
+   vim ~/.zshrc 
    ```
 3. Set your API keys as environment variables:
    ```bash
@@ -37,8 +41,9 @@ Run the script with the path to your audio file:
 
    ```bash
     python chatbot.py <soundfile_path>
-    Replace <soundfile_path> with your audio file's path.
    ```
+Replace <soundfile_path> with your audio file's path.
+
 
 ##How It Works
 ###Step 1: Speech to Text
