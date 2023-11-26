@@ -1,51 +1,50 @@
 # VoiceBotAI
 
-This program provides a unique way to interact with a chatbot using voice commands. It integrates IBM Watson's Speech to Text and Text to Speech services with OpenAI's powerful GPT-3 model, allowing users to have a conversational experience entirely through voice.
+# Voice-Interactive Chatbot
 
-Features
+This program integrates IBM Watson's Speech to Text and Text to Speech services with OpenAI's GPT-3.5 model, providing a seamless voice-interactive chatbot experience.
 
-Speech to Text: Converts spoken language into text using IBM Watson's Speech to Text API.
-ChatGPT Interaction: Processes the transcribed text through OpenAI's GPT-3 model to generate relevant responses.
-Text to Speech: Converts the chatbot's text responses back into speech using IBM Watson's Text to Speech API.
-Prerequisites
+## Features
 
-Before you start using this chatbot, you need to set up a few things:
+- **Speech to Text:** Converts voice to text using IBM Watson's API.
+- **ChatGPT Interaction:** Processes the text with OpenAI's GPT-3 to generate responses.
+- **Text to Speech:** Converts the chatbot's text responses back into voice using IBM Watson's API.
 
-An IBM Cloud account with Watson Speech to Text and Text to Speech services.
-An OpenAI account with access to the GPT-3 API.
-Python 3.x installed on your system.
-Make sure you have the necessary API keys and have installed the required Python packages (ibm-watson, openai, etc.).
+## Prerequisites
 
-Installation
+- IBM Cloud account with Watson Speech to Text and Text to Speech services.
+- OpenAI account with GPT-3 API access.
+- Python 3.x.
 
-Clone this repository or download the source code.
-Install the required dependencies:
-sh
-Copy code
-pip install -r requirements.txt
-Set your IBM and OpenAI API keys as environment variables:
-sh
-Copy code
-export STT_API_KEY='your-ibm-speech-to-text-key'
-export TTS_API_KEY='your-ibm-text-to-speech-key'
-export OPENAI_API_KEY='your-openai-key'
-Usage
+Ensure you have the API keys for IBM Watson and OpenAI, and install the required Python packages.
 
-To use the chatbot, run the script with the path to your audio file (e.g., .mp3):
+## Installation
 
-sh
-Copy code
-python chatbot.py <soundfile_path>
-Replace <soundfile_path> with the path to your audio file.
+1. Clone or download this repository.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Set your API keys as environment variables:
+   ```bash
+    export STT_API_KEY='your-ibm-speech-to-text-key'
+    export TTS_API_KEY='your-ibm-text-to-speech-key'
+    export OPENAI_API_KEY='your-openai-key'
+   ```
+##Usage
 
-How It Works
+Run the script with the path to your audio file:
 
-Speech to Text: The program takes a sound file as input and uses IBM's Speech to Text API to transcribe the audio into text.
-ChatGPT Interaction: The transcribed text is sent to OpenAI's ChatGPT, which generates a response.
-Text to Speech: Finally, the chatbot's response is converted back into speech using IBM's Text to Speech API, completing the voice interaction loop.
-Contributing
+   ```bash
+    python chatbot.py <soundfile_path>
+    Replace <soundfile_path> with your audio file's path.
+   ```
 
-If you'd like to contribute to this project, please feel free to fork the repository, make changes, and submit a pull request.
-
-License
+##How It Works
+###Step 1: Speech to Text
+Transcribes audio to text using IBM's API.
+###Step 2: ChatGPT Interaction
+Sends text to ChatGPT for response.
+###Step 3: Text to Speech
+Converts response to speech using IBM's API.
 
