@@ -21,4 +21,6 @@ def STT_convertor(recording_file):
 		audio=audio,
 		content_type='audio/mp3'
 	).get_result()
+
 	transcription = response['results'][0]['alternatives'][0]['transcript']
+	return (transcription)

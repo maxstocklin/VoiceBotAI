@@ -1,4 +1,3 @@
-
 from openai import OpenAI
 import os
 import sys
@@ -32,7 +31,6 @@ def main():
 		{"role": "system", "content": "You are an Assistant named Stan and you are acting friendly. Tell them a joke if nothing is specified."},
 		{"role": "user", "content": f"{transcription}"}
 	],
-	max_tokens=3000,
 	temperature=0.7,  # Adjust for creativity
 	stop=["\n"],  # Stops on a new line
 	frequency_penalty=0.5,  # Adjust to reduce repetition
@@ -43,6 +41,6 @@ def main():
 	print(chatbot_response)
 
 	print('Step 3: Text to Speech')
-	TTS_convertor(chatbot_response, "output_weather.mp3")
+	TTS_convertor(chatbot_response, "output.mp3")
 if __name__ == "__main__":
 	main()
